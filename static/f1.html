@@ -7,7 +7,7 @@
     <style>
         body { 
             font-family: Arial, sans-serif; 
-            background-image: url('https://pixabay.com/photos/railroad-tracks-rails-train-track-2165844/'); 
+            background-image: url('train.jpg'); /* Background image */
             background-size: cover;
             background-position: center;
             color: white;
@@ -18,10 +18,12 @@
         .container { 
             max-width: 600px; 
             margin: 50px auto; 
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(6px); /* Add blur effect */
+            -webkit-backdrop-filter: blur(10px); /* For Safari */
         }
         h1 { 
             text-align: center;
@@ -69,6 +71,7 @@
             border-radius: 5px;
             display: none; /* Hidden initially, will be shown dynamically */
         }
+     
         /* Responsive design */
         @media (max-width: 768px) {
             .container {
